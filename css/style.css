@@ -17,8 +17,8 @@
 }
 
 .btn-default:hover {
-    background: #fff;
-    color: #000;
+    background: #513268;
+    color: #fff;
 }
 
 .btn-undefault {
@@ -39,7 +39,7 @@
 .pad {
     position: absolute;
 
-    right: 310px;
+    right: 300px;
     top: 10px;
 
 }
@@ -99,6 +99,11 @@ body {
 }
 
 .wh:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.wh:visited {
     color: white;
     text-decoration: none;
 }
