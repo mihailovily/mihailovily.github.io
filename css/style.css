@@ -38,13 +38,12 @@
 
 .pad {
     position: absolute;
-
-    right: 300px;
+    left: 20px;
     top: 10px;
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
     .desktop {
         visibility: hidden;
         display: none;
@@ -58,7 +57,7 @@
     .otstup {}
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 767px) {
     .mobile {
         visibility: hidden;
         display: none;
