@@ -3,5 +3,9 @@
   "scripts": {
     "build": "pug index.pug && pug about.pug && pug career.pug && pug contact.pug",
     "test": "jest"
+  },
+  "dependencies": {
+    "pug": "^3.0.0",
+    "yarn": "^1.22.10"
   }
 }

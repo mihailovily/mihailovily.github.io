@@ -11,3 +11,21 @@ mixin card(hreff, titlee, pp, imagee, proj)
         br
         div(type="button" class="btn btn-default")
           a(href=proj class="un wh") узнать больше
+mixin clients(name, pica, picb, picc, descr, visit)
+  h1.my-4= name
+  div.row
+      div.col-md-8
+          img(src=pica width="100%")
+      div.col-md-4
+          h3.my-3 описание
+          p= descr
+          div.btn.btn-default(type="button")
+              a.un.wh(href="https://avia76.ru")= visit
+  h3.my-4 дополнительные скрины
+  div.row
+      div.col-md-6
+          a(href="#")
+              img(src=picb width="100%")
+      div.col-md-6
+          a(href="#")
+              img(src=picc width="100%")
