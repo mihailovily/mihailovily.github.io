@@ -1,0 +1,7 @@
+{
+  "name": "mihailovily",
+  "scripts": {
+    "build": "pug index.pug && pug about.pug && pug career.pug && pug contact.pug",
+    "test": "jest"
+  }
+}
