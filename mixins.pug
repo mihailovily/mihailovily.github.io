@@ -1,0 +1,13 @@
+mixin card(hreff, titlee, pp, imagee, proj)
+  div.col-sm-6
+    div.card
+      div.card-body
+        h4.card-title
+          br
+          a(href=hreff)= titlee
+        p.card-text= pp
+        img(width="100%" height="" src=imagee) 
+        br
+        br
+        div(type="button" class="btn btn-default")
+          a(href=proj class="un wh") read more
