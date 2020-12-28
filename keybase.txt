@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/mihailovily
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://mihailovily.net.ru
+  * I am mihailovily (https://keybase.io/mihailovily) on keybase.
+  * I have a public key ASBFWLcl45ou6BtxAJdvf36yLfy84BAv0bpPQETIzrIH8wo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01204558b725e39a2ee81b7100976f7f7eb22dfcbce0102fd1ba4f4044c8ceb207f30a",
+      "host": "keybase.io",
+      "kid": "01204558b725e39a2ee81b7100976f7f7eb22dfcbce0102fd1ba4f4044c8ceb207f30a",
+      "uid": "eafb27c602dfa8762eec04c5efa90019",
+      "username": "mihailovily"
+    },
+    "merkle_root": {
+      "ctime": 1609134935,
+      "hash": "3fa6e74e4f35c4e2a313a45428513312cfa8c8d6d09f051c6f4443d51b18e6f324649c4103dc69a63d316e7618ba586486b39c5ed88a36456ba3fe8597a4afed",
+      "hash_meta": "6857d33ef382a3cff4f84efcb18682f6263cf196321f58a98496e222f6bc30c4",
+      "seqno": 18524094
+    },
+    "service": {
+      "entropy": "x+P3F9adxyoNUVgSlTXv/3B3",
+      "hostname": "mihailovily.net.ru",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.0"
+  },
+  "ctime": 1609134967,
+  "expire_in": 504576000,
+  "prev": "c3d373e74eaf7c2b148fb86e1a30584cdfc6da4b31f554d2770b79c21867cb65",
+  "seqno": 8,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgRVi3JeOaLugbcQCXb39+si38vOAQL9G6T0BEyM6yB/MKp3BheWxvYWTESpcCCMQgw9Nz506vfCsUj7huGjBYTN/G2ksx9VTSdwt5whhny2XEIOv+UviKaVcGVE+ok552srA5AqB3WP4Anra42sEWMf0KAgHCo3NpZ8RAaDleMK2UocAW38dhdtINJaK99A5yZW9xm03uLAmFdKUqpdVsBqqBzCwhjhIBRks8Bjl/sSSxrSsurEDjvhf2D6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIFe21CXio6VgHppzLKCee/H4++rdtd5FQVcsefP7fCpso3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mihailovily
+
+==================================================================
