@@ -1,6 +1,6 @@
 .violfoot {
-    background: #7f6195;
-    background-color: #7f6195;
+    background: black;
+    background-color: black;
     color: #fff;
     height: 40px;
     border-radius: 10px 10px 0% 0%;
@@ -12,17 +12,17 @@
 }
 
 .btn-default {
-    background: #7f6195;
+    background: black;
     color: #fff;
 }
 
 .btn-default:hover {
-    background: #513268;
+    background: black;
     color: #fff;
 }
 
 .btn-undefault {
-    background: #7f6195;
+    background: black;
     color: #fff;
 }
 
@@ -121,7 +121,10 @@ body {
     margin-bottom: 30px;
 }
 
-
+@font-face {
+	font-family: Rocket;
+	src: url('../font/rocket.ttf');
+}
 
 .textback {
     margin-top: 10%;
@@ -158,7 +161,7 @@ a {
     text-align: left;
 }
 a, h1, p{
-    font-family: 'Montserrat';
+    font-family: 'Rocket';
 }
 .btn{
     border: none;
