@@ -17,7 +17,7 @@
 }
 
 .btn-default:hover {
-    background: black;
+    background: #f60;
     color: #fff;
 }
 
@@ -26,7 +26,9 @@
     color: #fff;
 }
 
-
+a:focus, a:hover {
+    color: #f60;
+    text-decoration: none;
 
 .rig {
     text-align: right;
@@ -141,11 +143,6 @@ body {
 }
 
 
-
-a:visited {
-    color: black;
-    /* Цвет посещенных ссылок */
-}
 
 a:active {
     color: black;
