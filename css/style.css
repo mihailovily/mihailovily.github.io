@@ -28,7 +28,7 @@
 
 a:focus, a:hover {
     color: #f60;
-    text-decoration: none;
+    text-decoration: none;}
 
 .rig {
     text-align: right;
@@ -157,7 +157,7 @@ a {
 .left {
     text-align: left;
 }
-a, h1, p{
+a, h1, p, ul, li{
     font-family: 'Rocket';
 }
 .btn{
