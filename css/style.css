@@ -1,170 +1,224 @@
-.violfoot {
-    background: black;
-    background-color: black;
-    color: #fff;
-    height: 40px;
-    border-radius: 10px 10px 0% 0%;
-}
-
-.foot {
-    position: inherit;
-    top: 8px;
-}
-
-.btn-default {
-    background: black;
-    color: #fff;
-}
-
-.btn-default:hover {
-    background: #f60;
-    color: #fff;
-}
-
-.btn-undefault {
-    background: black;
-    color: #fff;
-}
-
-a:focus, a:hover {
-    color: #f60;
-    text-decoration: none;}
-
-.rig {
-    text-align: right;
-}
-
-.fix {
-    position: fixed;
-}
-
-.pad {
-    position: absolute;
-    left: 20px;
-    top: 10px;
-
-}
-
-@media screen and (max-width: 767px) {
-    .desktop {
-        visibility: hidden;
-        display: none;
+@media screen and (max-width: 1360px) {
+    body,
+    html {
+      font-size: 16.5px;
     }
-
-    .otstuptwo {
-        margin-top: 10px;
-        margin-bottom: 10px;
+  }
+  @media screen and (max-width: 1280px) {
+    body,
+    html {
+      font-size: 16px;
     }
-
-    .otstup {}
-}
-
-@media screen and (min-width: 767px) {
-    .mobile {
-        visibility: hidden;
-        display: none;
+  }
+  @media screen and (max-width: 1200px) {
+    body,
+    html {
+      font-size: 15.5px;
     }
-}
-
-.hide {
-    display: none;
-}
-
-.cross {
-
-    z-index: 10;
-}
-
-body {
-    background-color: #f2f2f2;
-    text-transform: lowercase;
-    ;
-}
-
-.white {
-    background-color: white;
-}
-
-.un {
-    text-decoration: none;
-}
-
-.un:hover {
-
-    text-decoration: none;
-}
-
-.wh {
-    color: white;
-
-}
-
-.wh:hover {
-    color: white;
-    text-decoration: none;
-}
-
-.wh:visited {
-    color: white;
-    text-decoration: none;
-}
-
-.ctr {
-    text-align: center;
-}
-
-.otstup {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.otstuptwo {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-@font-face {
-	font-family: Rocket;
-	src: url('../font/rocket.ttf');
-}
-
-.textback {
-    margin-top: 10%;
-}
-
-.blue {
-    background-color: #81b3d2;
-    color: white;
-}
-
-.gray {
-    background-color: #eee;
-    ;
-}
-
-
-
-a:active {
-    color: black;
-    /* Цвет активных ссылок */
-}
-
-a {
-    color: black;
-    /* Цвет ссылок */
-}
-
-.left {
-    text-align: left;
-}
-a, h1, p, ul, li, h2, h3{
-    font-family: 'Rocket';
-}
-
-.btn{
-    border: none;
-    border-radius: 3px;
-}
-img{
-    border-radius:5px ;
-}
+  }
+  @media screen and (max-width: 1145px) {
+    body,
+    html {
+      font-size: 15px;
+    }
+    .big-project {
+    }
+    .project {
+    }
+  }
+  @media screen and (max-width: 1040px) {
+    body,
+    html {
+      font-size: 14.5px;
+    }
+  }
+  @media all and (max-device-width: 808px) {
+    h1 {
+      line-height: 1.3em;
+    }
+    a {
+      font-size: 1.25em;
+    }
+    body,
+    html {
+      min-width: auto;
+      font-size: 14px;
+      line-height: 1.3em;
+    }
+    .big-project {
+     
+    }
+    .project {
+      
+    }
+  }
+  
+  .violfoot {
+      background: #0B0500;
+      background-color: #0B0500;
+      color: #fff;
+      height: 40px;
+      border-radius: 10px 10px 0% 0%;
+  }
+  
+  .foot {
+      position: inherit;
+      top: 8px;
+  }
+  
+  .btn-default {
+      background: #0B0500;
+      color: #fff;
+  }
+  
+  .btn-default:hover {
+      background: #f60;
+      color: #fff;
+  }
+  
+  .btn-undefault {
+      background: #0B0500;
+      color: #fff;
+  }
+  
+  a:focus, a:hover {
+      color: #f60;
+      text-decoration: none;}
+  
+  .rig {
+      text-align: right;
+  }
+  
+  .fix {
+      position: fixed;
+  }
+  
+  .pad {
+      position: absolute;
+      left: 20px;
+      top: 10px;
+  
+  }
+  
+  @media screen and (max-width: 767px) {
+      .desktop {
+          visibility: hidden;
+          display: none;
+      }
+  
+      .otstuptwo {
+          margin-top: 10px;
+          margin-bottom: 10px;
+      }
+  }
+  
+  @media screen and (min-width: 767px) {
+      .mobile {
+          visibility: hidden;
+          display: none;
+      }
+  }
+  
+  .hide {
+      display: none;
+  }
+  
+  .cross {
+  
+      z-index: 10;
+  }
+  
+  body {
+      background-color: #f2f2f2;
+      text-transform: lowercase;
+      ;
+  }
+  
+  .white {
+      background-color: white;
+  }
+  
+  .un {
+      text-decoration: none;
+  }
+  
+  .un:hover {
+  
+      text-decoration: none;
+  }
+  
+  .wh {
+      color: white;
+  
+  }
+  
+  .wh:hover {
+      color: white;
+      text-decoration: none;
+  }
+  
+  .wh:visited {
+      color: white;
+      text-decoration: none;
+  }
+  
+  .ctr {
+      text-align: center;
+  }
+  
+  .otstup {
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+  
+  .otstuptwo {
+      margin-top: 30px;
+      margin-bottom: 30px;
+  }
+  
+  @font-face {
+      font-family: Rocket;
+      src: url('../font/rocket.ttf');
+  }
+  
+  .textback {
+      margin-top: 10%;
+  }
+  
+  .blue {
+      background-color: #81b3d2;
+      color: white;
+  }
+  
+  .gray {
+      background-color: #eee;
+      ;
+  }
+  
+  
+  
+  a:active {
+      color: #0B0500;
+      /* Цвет активных ссылок */
+  }
+  
+  a {
+      color: #0B0500;
+      /* Цвет ссылок */
+  }
+  
+  .left {
+      text-align: left;
+  }
+  a, h1, p, ul, li, h2, h3{
+      font-family: 'Rocket';
+  }
+  
+  .btn{
+      border: none;
+      border-radius: 3px;
+  }
+  img{
+      border-radius:5px ;
+  }
+  
