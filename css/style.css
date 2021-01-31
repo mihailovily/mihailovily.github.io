@@ -157,9 +157,10 @@ a {
 .left {
     text-align: left;
 }
-a, h1, p, ul, li{
+a, h1, p, ul, li, h2, h3{
     font-family: 'Rocket';
 }
+
 .btn{
     border: none;
     border-radius: 3px;
