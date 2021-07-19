@@ -6,12 +6,12 @@ mixin card(hreff, titlee, pp, imagee, proj)
           br
           a(href=hreff)= titlee
         p.card-text= pp
-        img(width="100%" height="" src=imagee) 
+        img(height='312px' width='auto' src=imagee) 
         br
         br
         div(type="button" class="btn btn-default")
           a(href=proj class="un wh") узнать больше
-mixin clients(name, pica, picb, picc, descr, visit)
+mixin clients(name, pica, picb, picc, descr, visit, linkk)
   h1.my-4= name
   div.row
       div.col-md-8
@@ -20,7 +20,7 @@ mixin clients(name, pica, picb, picc, descr, visit)
           h3.my-3 описание
           p= descr
           div.btn.btn-default(type="button")
-              a.un.wh(href="https://avia76.ru")= visit
+              a.un.wh(href=linkk)= visit
   h3.my-4 дополнительные скрины
   div.row
       div.col-md-6
