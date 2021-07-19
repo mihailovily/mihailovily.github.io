@@ -222,3 +222,7 @@
       border-radius:5px ;
   }
   
+  .carta{
+    max-height:312px; 
+    width: auto; 
+    max-width:100%;}
