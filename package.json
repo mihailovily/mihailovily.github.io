@@ -1,7 +1,7 @@
 {
   "name": "mihailovily",
   "scripts": {
-    "build": "pug index.pug && pug about.pug && pug career.pug && pug contact.pug",
+    "build": "pug index.pug && pug about.pug && pug career.pug && pug contact.pug && pug clients/tori/tori.pug && pug clients/avianik/avianik.pug && pug clients/elis/elis.pug && pug clients/nothing/nothing.pug && pug clients/sedona/sedona.pug && pug clients/tori/tori.pug && pug clients/nft/nft.pug",
     "test": "jest"
   },
   "dependencies": {
