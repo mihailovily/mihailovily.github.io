@@ -119,6 +119,10 @@
       }
   }
   
+  .no-points{
+    list-style-type: none;
+  }
+
   .hide {
       display: none;
   }
@@ -226,3 +230,4 @@
     max-height:312px; 
     width: auto; 
     max-width:100%;}
+
