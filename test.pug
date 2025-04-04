@@ -1,17 +1,153 @@
-h1.my-4 avianik
-div.row
-    div.col-md-8
-        img(src="clients/avianik/img/main.jpg" width="100%")
-    div.col-md-4
-        h3.my-3 Description
-        p website for ticket office, which is located in Russia, in Yaroslavl
-        div.btn btn-default(type="button")
-            a.un.wh(href="https://avia76.ru") visit site
-h3.my-4 other screenshots
-div.row
-    div.col-md-6
-        a(href="#")
-            img(src="../avianik/img/1.jpg" width="100%")
-    div.col-md-6
-        a(href="#")
-            img(src="../avianik/img/2.jpg" width="100%")
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title John Doe | Security Engineer
+    script(src="https://cdn.tailwindcss.com")
+    link(rel="stylesheet" href="css/new.css")
+  body.antialiased
+    // Navigation
+    nav.navbar.py-3
+      .container.mx-auto.px-4
+        span.text-gray-400 $ 
+        span.text-orange-500.ml-1 mihailovily
+        span.text-gray-400  _
+
+    // Hero Section
+    header.container.mx-auto.px-4.flex.items-center.min-h-screen
+      div(class="w-full flex flex-col md:flex-row gap-8")
+        .terminal(class="md:w-2/3")
+          .terminal-header
+            .terminal-dot.red
+            .terminal-dot.yellow
+            .terminal-dot.green
+          .terminal-content
+            span $ whoami
+            br
+            span security_engineer
+            br
+            br
+            span $ cat skills.txt
+            br
+            span > pentesting
+            br
+            span > secure_code
+            br
+            span > web_dev
+            br
+            br
+            span
+              | $ 
+              span.blink _
+
+        .ascii-art.self-center(class="hidden md:block")
+          pre
+            |                      -****-                                           
+            |                      +@@@%=                                           
+            |                      :===-:                                           
+            |                      =###*-:+#%%%#+:.  .+#%%%%#:.   .::.              
+            |                      +@@@@@@@@@@@@@@#=#@@@@@@@@@%=  .+@@%*-..         
+            |                      +@@@@@%+::=%@@@@@@@*:::#@@@@@= .+@@@@@@@%=..     
+            |                      +@@@@*     .+@@@@%:     .@@@@%.    -%@@@@@@@@#.. 
+            |                      +@@@%=      -%@@@*:      #@@@%:       .:*@@@@@=. 
+            |                      +@@@%=      -%@@@*.      *@@@%:   ..:*@@@@@@@@-. 
+            |                      +@@@%=      -%@@@*.      *@@@%:.-#@@@@@@@%=..    
+            |                      +@@@%=      -%@@@*.      *@@@%:.+@@@%*-..        
+            |                      =%%%#-      -*%%%+.      +%%%#:.=+:.     
+
+    // Projects Section
+    section#projects.py-20
+      .container.mx-auto.px-4
+        .text-left.mb-16
+          h2.text-2xl.font-medium.mb-2 Projects
+          p.text-gray-400 Selected security tools and frameworks
+
+        .grid(class="grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4")
+          // Project 1
+          .card.p-4
+            h3.text-lg.font-medium.mb-2 SecureAuth
+            p.text-gray-400.text-sm.mb-3 Zero-trust authentication framework with hardware security module integration.
+            .flex.flex-wrap.gap-1
+              span.project-tag Auth
+              span.project-tag ZTA
+
+          // Project 2
+          .card.p-4
+            h3.text-lg.font-medium.mb-2 VulnScan
+            p.text-gray-400.text-sm.mb-3 Automated vulnerability scanner with CI/CD integration.
+            .flex.flex-wrap.gap-1
+              span.project-tag Scanner
+              span.project-tag Automation
+
+          // Project 3
+          .card.p-4
+            h3.text-lg.font-medium.mb-2 ShadowNet
+            p.text-gray-400.text-sm.mb-3 Decentralized anonymous communication network.
+            .flex.flex-wrap.gap-1
+              span.project-tag Privacy
+              span.project-tag P2P
+
+          // Project 4
+          .card.p-4
+            h3.text-lg.font-medium.mb-2 CryptoVault
+            p.text-gray-400.text-sm.mb-3 Client-side encrypted file storage with zero-knowledge architecture.
+            .flex.flex-wrap.gap-1
+              span.project-tag Encryption
+              span.project-tag Storage
+
+          // Project 5
+          .card.p-4
+            h3.text-lg.font-medium.mb-2 NetShield
+            p.text-gray-400.text-sm.mb-3 Next-gen firewall with behavioral analysis.
+            .flex.flex-wrap.gap-1
+              span.project-tag Network
+              span.project-tag Security
+
+          // Project 6
+          .card.p-4
+            h3.text-lg.font-medium.mb-2 SecureAPI
+            p.text-gray-400.text-sm.mb-3 Framework for building hardened REST APIs.
+            .flex.flex-wrap.gap-1
+              span.project-tag API
+              span.project-tag Framework
+
+    .section-divider
+
+    // Terminal Section
+    section.py-20
+      .container.mx-auto.px-4
+        .terminal.max-w-3xl
+          .terminal-header
+            .terminal-dot.red
+            .terminal-dot.yellow
+            .terminal-dot.green
+          .terminal-content
+            span $ mihailovily --skills
+            br
+            br
+            span > Pentesting: ██████████ 100%
+            br
+            span > Secure Coding: █████████▉ 95%
+            br
+            span > Cryptography: ████████▉ 90%
+            br
+            span > Web Development: ████████▌ 85%
+            br
+            span > System Design: ███████▊ 80%
+            br
+            br
+            span
+              | $ 
+              span.blink _
+
+    // Footer
+    footer.footer.py-8
+      .container.mx-auto.px-4
+        .flex(class="flex-col md:flex-row justify-between items-center")
+          .mb-4(class="md:mb-0")
+            p.text-gray-400.text-sm mihailovily@life:~#
+          div
+            p.text-gray-400.text-sm © 2005 - now
+
+    script(src="js/new.js")
