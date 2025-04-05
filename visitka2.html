@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe | Security Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="antialiased">
+    <!-- Navigation -->
+    <nav class="navbar py-3">
+        <div class="container mx-auto px-4">
+            <span class="text-gray-400">$</span>
+            <span class="text-orange-500 ml-1">mihailovily</span>
+            <span class="text-gray-400"> _</span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="container mx-auto px-4 flex items-center min-h-screen">
+        <div class="w-full flex flex-col md:flex-row gap-8">
+            <div class="terminal md:w-2/3">
+                <div class="terminal-header">
+                    <div class="terminal-dot red"></div>
+                    <div class="terminal-dot yellow"></div>
+                    <div class="terminal-dot green"></div>
+                </div>
+                <div class="terminal-content">
+                    <span>$ whoami</span><br>
+                    <span>security_engineer</span><br><br>
+                    <span>$ cat skills.txt</span><br>
+                    <span>> pentesting</span><br>
+                    <span>> secure_code</span><br>
+                    <span>> web_dev</span><br><br>
+                    <span>$ <span class="blink">_</span></span>
+                </div>
+            </div>
+
+            <div class="hidden md:block ascii-art self-center">
+                <pre>
+                                                   
+                    -****-                                           
+                    +@@@%=                                           
+                    :===-:                                           
+                    =###*-:+#%%%#+:.  .+#%%%%#:.   .::.              
+                    +@@@@@@@@@@@@@@#=#@@@@@@@@@%=  .+@@%*-..         
+                    +@@@@@%+::=%@@@@@@@*:::#@@@@@= .+@@@@@@@%=..     
+                    +@@@@*     .+@@@@%:     .@@@@%.    -%@@@@@@@@#.. 
+                    +@@@%=      -%@@@*:      #@@@%:       .:*@@@@@=. 
+                    +@@@%=      -%@@@*.      *@@@%:   ..:*@@@@@@@@-. 
+                    +@@@%=      -%@@@*.      *@@@%:.-#@@@@@@@%=..    
+                    +@@@%=      -%@@@*.      *@@@%:.+@@@%*-..        
+                    =%%%#-      -*%%%+.      +%%%#:.=+:.             
+                                                                     
+                                                                     
+                </pre>
+            </div>
+        </div>
+    </header>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-2xl font-medium mb-2">Projects</h2>
+                <p class="text-gray-400">Selected security tools and frameworks</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Project 1 -->
+                <div class="card p-4">
+                    <h3 class="text-lg font-medium mb-2">SecureAuth</h3>
+                    <p class="text-gray-400 text-sm mb-3">Zero-trust authentication framework with hardware security module integration.</p>
+                    <div class="flex flex-wrap gap-1">
+                        <span class="project-tag">Auth</span>
+                        <span class="project-tag">ZTA</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card p-4">
+                    <h3 class="text-lg font-medium mb-2">VulnScan</h3>
+                    <p class="text-gray-400 text-sm mb-3">Automated vulnerability scanner with CI/CD integration.</p>
+                    <div class="flex flex-wrap gap-1">
+                        <span class="project-tag">Scanner</span>
+                        <span class="project-tag">Automation</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="card p-4">
+                    <h3 class="text-lg font-medium mb-2">ShadowNet</h3>
+                    <p class="text-gray-400 text-sm mb-3">Decentralized anonymous communication network.</p>
+                    <div class="flex flex-wrap gap-1">
+                        <span class="project-tag">Privacy</span>
+                        <span class="project-tag">P2P</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="card p-4">
+                    <h3 class="text-lg font-medium mb-2">CryptoVault</h3>
+                    <p class="text-gray-400 text-sm mb-3">Client-side encrypted file storage with zero-knowledge architecture.</p>
+                    <div class="flex flex-wrap gap-1">
+                        <span class="project-tag">Encryption</span>
+                        <span class="project-tag">Storage</span>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="card p-4">
+                    <h3 class="text-lg font-medium mb-2">NetShield</h3>
+                    <p class="text-gray-400 text-sm mb-3">Next-gen firewall with behavioral analysis.</p>
+                    <div class="flex flex-wrap gap-1">
+                        <span class="project-tag">Network</span>
+                        <span class="project-tag">Security</span>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="card p-4">
+                    <h3 class="text-lg font-medium mb-2">SecureAPI</h3>
+                    <p class="text-gray-400 text-sm mb-3">Framework for building hardened REST APIs.</p>
+                    <div class="flex flex-wrap gap-1">
+                        <span class="project-tag">API</span>
+                        <span class="project-tag">Framework</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Terminal Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="terminal max-w-3xl">
+                <div class="terminal-header">
+                    <div class="terminal-dot red"></div>
+                    <div class="terminal-dot yellow"></div>
+                    <div class="terminal-dot green"></div>
+                </div>
+                <div class="terminal-content">
+                    <span>$ john_doe --skills</span><br><br>
+                    <span>> Pentesting: ██████████ 100%</span><br>
+                    <span>> Secure Coding: █████████▉ 95%</span><br>
+                    <span>> Cryptography: ████████▉ 90%</span><br>
+                    <span>> Web Development: ████████▌ 85%</span><br>
+                    <span>> System Design: ███████▊ 80%</span><br><br>
+                    <span>$ <span class="blink">_</span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-gray-400 text-sm">john_doe@security:~$</p>
+                </div>
+                <div>
+                    <p class="text-gray-400 text-sm">© 2023 — No rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple terminal typing effect
+        document.addEventListener('DOMContentLoaded', function() {
+            const terminal = document.querySelector('.terminal-content');
+            const commands = [
+                "nmap -sV -T4 target.com",
+                "gobuster dir -u https://target.com -w wordlist.txt",
+                "sqlmap -u 'https://target.com/page?id=1' --dbs",
+                "hydra -l admin -P rockyou.txt target.com ssh",
+                "john --wordlist=rockyou.txt hashes.txt"
+            ];
+
+            let currentCommand = 0;
+
+            function typeNextCommand() {
+                if (currentCommand < commands.length) {
+                    const prompt = terminal.querySelector('span:last-child');
+                    prompt.classList.remove('blink');
+
+                    const newLine = document.createElement('div');
+                    newLine.innerHTML = `$ ${commands[currentCommand]}<br><span>> Command executed successfully</span><br><br><span>$ <span class="blink">_</span></span>`;
+                    terminal.appendChild(newLine);
+
+                    currentCommand++;
+                    prompt.classList.add('blink');
+
+                    // Auto-scroll to bottom
+                    terminal.scrollTop = terminal.scrollHeight;
+
+                    // Schedule next command
+                    setTimeout(typeNextCommand, 3000);
+                }
+            }
+
+            // Start typing after initial delay
+            setTimeout(typeNextCommand, 5000);
+        });
+    </script>
+</body>
+</html>

@@ -1,13 +1,105 @@
 extends base.pug
 block content
-  div.container
-    h1.my-4 проекты
-    br
-    div.row
-      +card("clients/nft/nft.html", "suprematism", "nft", "clients/nft/img/1.jpg", "clients/nft/nft.html")
-      +card("clients/tori/tori.html", "tori", "логотип для музыкального коллектива", "clients/tori/img/1.jpg", "clients/tori/tori.html")
-      +card("clients/nothing.html", "nothing", "nothing", "clients/nothing/img/1.jpg", "clients/nothing/nothing.html")
-      +card("https://github.com/Mihailovily/ETI-lost-in-subterranean", "ETI:lost in subterranean", "игра-рогалик на js", "clients/elis/img/1.jpg", "elis.html")
-      +card("https://avia76.ru", "avianik", "сайт для авиакассы", "clients/avianik/img/main.jpg", "clients/avianik/avianik.html")
-      +card("https://github.com/Mihailovily/sedona", "sedona", "демо-сайт для американского штата", "clients/sedona/img/main.jpg", "clients/sedona/sedona.html")
-      
+    header.container.mx-auto.px-4.flex.items-center.min-h-screen
+      div(class="w-full flex flex-col md:flex-row gap-8")
+        .terminal(class="md:w-2/3")
+          .terminal-header
+            .terminal-dot.red
+            .terminal-dot.yellow
+            .terminal-dot.green
+          .terminal-content
+            span $ whoami
+            br
+            span mihailovily
+            br
+            br
+            span $ pwd
+            br
+            span > /russia/spb/bonch
+            br
+            br
+            span $ cat hobbies.txt
+            br
+            span > tennis, photography, ctf, linux
+            br
+            br
+            span $ cat contact_me.txt
+            br
+            span > GitHub: 
+            a(href="https://github.com/mihailovily") @mihailovily
+            br
+            span > Telegram: 
+            a(href="https://t.me/mihailovily") @mihailovily
+            br
+            span > Email: 
+            a(href="mailto:mihailovily@gmail.com") @mihailovily
+            br
+            br
+            span
+              | $ 
+              span.blink _
+
+        .ascii-art.self-center(class="hidden md:block")
+          pre
+            |                      -****-                                           
+            |                      +@@@%=                                           
+            |                      :===-:                                           
+            |                      =###*-:+#%%%#+:.  .+#%%%%#:.   .::.              
+            |                      +@@@@@@@@@@@@@@#=#@@@@@@@@@%=  .+@@%*-..         
+            |                      +@@@@@%+::=%@@@@@@@*:::#@@@@@= .+@@@@@@@%=..     
+            |                      +@@@@*     .+@@@@%:     .@@@@%.    -%@@@@@@@@#.. 
+            |                      +@@@%=      -%@@@*:      #@@@%:       .:*@@@@@=. 
+            |                      +@@@%=      -%@@@*.      *@@@%:   ..:*@@@@@@@@-. 
+            |                      +@@@%=      -%@@@*.      *@@@%:.-#@@@@@@@%=..    
+            |                      +@@@%=      -%@@@*.      *@@@%:.+@@@%*-..        
+            |                      =%%%#-      -*%%%+.      +%%%#:.=+:.     
+
+    // Projects Section
+    section#projects.py-20
+      .container.mx-auto.px-4
+        .text-left.mb-16
+          h2.text-2xl.font-medium.mb-2.monofont Projects
+          p.text-gray-400 Developed by me
+
+        .grid(class="grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4")
+            // +project("BreadVPNShop", "Telegram bot to take access to VPN", "https://github.com/mihailovily/avianik-calendars-2025", "design", "illustrator")
+            +project("JavaPasswordManager", "Desktop password manager, written on java", "https://github.com/mihailovily/Java-password-manager", "desktop", "java")
+            // +project("Avianik calendars (2025)", "Printable calendars for avianik (2025)", "https://github.com/mihailovily/avianik-calendars-2025", "design", "illustrator")
+            +project("ffencode-python", "python implementation of DOS's ffencode program ", "https://github.com/mihailovily/ffencode-python", "archived", "python")
+            +project("BonchCtfCheckin", "Telegram bot to track lecture attendance", "https://github.com/mihailovily/bonch_ctf_checkin", "bonch", "python")
+            +project("my-linux-setup", "my linux setup for my t490", "https://github.com/mihailovily/my-linux-setup", "linux", "desktop")
+            +project("BankCardsRead", "Decode magstripe form bank cards using reader", "https://github.com/mihailovily/bankCardsRead", "cybersec", "python")
+            +project("Avianik calendars (2024)", "Printable calendars for avianik (2024)", "https://github.com/mihailovily/avianik-calendars-2024", "design", "illustrator")
+            +project("CtfTools", "my tools for ctfs", "https://github.com/mihailovily/ctftools", "ctf", "notes")
+            +project("EGE checker bot", "Telegram bot, which sends you results of Russian United Government Exam", "https://github.com/mihailovily/EGE-checker-bot", "archived", "python")
+            +project("Avianik", "Site for ticket office in Yaroslavl", "https://github.com/mihailovily/Avianik-2.0", "pug", "web")
+            +project("FlibustaTelegramBot", "Telegram bot, which sends you books from Flibusta", "https://github.com/mihailovily/FlibustaTelegramBot", "telegram", "python")
+            +project("RUT", "Telegram bot, which sends you YT videos", "https://github.com/mihailovily/RUT", "telegram", "python")
+            +project("QMoney", "PyQt5 app for qiwi wallet", "https://github.com/mihailovily/QMoney-public", "QT", "python")
+            +project("ETI:lost in subterranean", "Browser-based rogue-like game on rot.js", "https://github.com/mihailovily/ETI-lost-in-subterranean", "archived", "JS")
+            +project("Sedona", "demo site, no reason", "https://github.com/mihailovily/sedona", "archived", "web")
+
+    .section-divider
+    section.py-20
+      .container.mx-auto.px-4
+        .terminal.max-w-3xl
+          .terminal-header
+            .terminal-dot.red
+            .terminal-dot.yellow
+            .terminal-dot.green
+          .terminal-content
+            span $ cat career.txt
+            br
+            br
+            span > jul. 2020: dvor.design (html coding)
+            br
+            span > sep. 2020 - sep 2025: freelance + pet-projects (github)
+            br
+            span > feb 2025 - march 2025: one price coffee (barista)
+            br
+            span > march 2025 - now: pet-projects (github)
+            br
+            br
+            span
+              | $ 
+              span.blink _

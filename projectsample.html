@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureAuth | John Doe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --bg-dark: #0a0a0a;
+            --bg-darker: #050505;
+            --accent: #f97316;
+            --text-primary: #f5f5f5;
+            --text-secondary: #a3a3a3;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-primary);
+            font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background-color: rgba(10, 10, 10, 0.7);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+        }
+
+        .card {
+            background-color: var(--bg-darker);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+
+        .card:hover {
+            border-color: rgba(249, 115, 22, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .project-tag {
+            background-color: rgba(249, 115, 22, 0.1);
+            color: var(--accent);
+            border-radius: 2px;
+            padding: 2px 6px;
+            font-size: 0.7rem;
+        }
+
+        .terminal {
+            background-color: var(--bg-darker);
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            padding: 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .terminal-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.8rem;
+        }
+
+        .terminal-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 6px;
+        }
+
+        .terminal-dot.red { background-color: #ff5f56; }
+        .terminal-dot.yellow { background-color: #ffbd2e; }
+        .terminal-dot.green { background-color: #27c93f; }
+
+        .terminal-content {
+            color: #34d399;
+            line-height: 1.4;
+        }
+
+        .blink {
+            animation: blink 1s step-end infinite;
+        }
+
+        @keyframes blink {
+            from, to { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        .footer {
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+            margin: 3rem 0;
+        }
+
+        .ascii-art {
+            color: var(--accent);
+            font-family: 'Courier New', monospace;
+            font-size: 0.6rem;
+            line-height: 1;
+            opacity: 0.7;
+        }
+
+        .project-image {
+            border-radius: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .project-image:hover {
+            transform: scale(1.02);
+        }
+
+        .feature-card {
+            background-color: rgba(15, 15, 15, 0.5);
+            border-left: 2px solid var(--accent);
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Navigation -->
+    <nav class="navbar py-3">
+        <div class="container mx-auto px-4">
+            <a href="/" class="flex items-center">
+                <span class="text-gray-400">$</span>
+                <span class="text-orange-500 ml-1">john_doe</span>
+                <span class="text-gray-400">_</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <header class="container mx-auto px-4 pt-32 pb-16">
+        <div class="flex flex-col md:flex-row gap-8 items-start">
+            <div class="md:w-2/3">
+                <div class="flex items-center mb-4">
+                    <span class="text-gray-400 mr-2">$</span>
+                    <h1 class="text-3xl font-medium text-orange-500">SecureAuth</h1>
+                </div>
+
+                <p class="text-gray-300 mb-6">
+                    Zero-trust authentication framework with hardware security module integration.
+                    Designed for enterprises requiring the highest level of access security.
+                </p>
+
+                <div class="flex flex-wrap gap-2 mb-8">
+                    <span class="project-tag">Authentication</span>
+                    <span class="project-tag">Zero Trust</span>
+                    <span class="project-tag">HSM</span>
+                    <span class="project-tag">FIDO2</span>
+                    <span class="project-tag">OAuth 2.0</span>
+                </div>
+
+                <div class="terminal mb-8">
+                    <div class="terminal-header">
+                        <div class="terminal-dot red"></div>
+                        <div class="terminal-dot yellow"></div>
+                        <div class="terminal-dot green"></div>
+                    </div>
+                    <div class="terminal-content">
+                        <span>$ secureauth --info</span><br><br>
+                        <span>> Version: 2.3.1</span><br>
+                        <span>> License: Apache 2.0</span><br>
+                        <span>> Language: Rust</span><br>
+                        <span>> Dependencies: 12</span><br><br>
+                        <span>$ <span class="blink">_</span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:w-1/3">
+                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                     alt="SecureAuth architecture"
+                     class="project-image w-full h-auto">
+            </div>
+        </div>
+    </header>
+
+    <!-- Project Details -->
+    <section class="py-12 bg-gradient-to-b from-transparent to-[rgba(5,5,5,0.8)]">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                <div>
+                    <h2 class="text-xl font-medium mb-4 flex items-center">
+                        <span class="text-gray-400 mr-2">$</span>
+                        <span>Project Overview</span>
+                    </h2>
+                    <p class="text-gray-300 mb-4">
+                        SecureAuth is a modern authentication framework built from the ground up with security
+                        as the primary focus. It implements zero-trust principles at every layer, ensuring
+                        continuous verification of all access requests.
+                    </p>
+                    <p class="text-gray-300">
+                        The system integrates with hardware security modules (HSMs) to provide tamper-proof
+                        credential storage and cryptographic operations. It supports FIDO2 standards for
+                        passwordless authentication and can be deployed as a standalone service or integrated
+                        with existing OAuth 2.0 infrastructure.
+                    </p>
+                </div>
+
+                <div>
+                    <h2 class="text-xl font-medium mb-4 flex items-center">
+                        <span class="text-gray-400 mr-2">$</span>
+                        <span>Technical Details</span>
+                    </h2>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-start">
+                            <span class="text-orange-500 mr-2">></span>
+                            <span>Written in Rust for memory safety and performance</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-orange-500 mr-2">></span>
+                            <span>Supports WebAuthn and FIDO2 standards</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-orange-500 mr-2">></span>
+                            <span>HSM integration via PKCS#11 interface</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-orange-500 mr-2">></span>
+                            <span>Pluggable authentication factors (TOTP, push notifications, biometrics)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-orange-500 mr-2">></span>
+                            <span>Distributed architecture with no single point of failure</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Screenshots Gallery -->
+            <div class="mb-16">
+                <h2 class="text-xl font-medium mb-6 flex items-center">
+                    <span class="text-gray-400 mr-2">$</span>
+                    <span>Implementation</span>
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+                         alt="SecureAuth admin interface"
+                         class="project-image w-full h-48 object-cover">
+
+                    <img src="https://images.unsplash.com/photo-1624953587687-daf255b6b80a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                         alt="SecureAuth mobile integration"
+                         class="project-image w-full h-48 object-cover">
+
+                    <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+                         alt="SecureAuth CLI tool"
+                         class="project-image w-full h-48 object-cover">
+                </div>
+            </div>
+
+            <!-- Key Features -->
+            <div>
+                <h2 class="text-xl font-medium mb-6 flex items-center">
+                    <span class="text-gray-400 mr-2">$</span>
+                    <span>Key Features</span>
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="feature-card p-4">
+                        <h3 class="text-orange-500 font-medium mb-2">Zero Trust Architecture</h3>
+                        <p class="text-gray-300 text-sm">
+                            Every access request is fully authenticated, authorized, and encrypted before granting access.
+                        </p>
+                    </div>
+
+                    <div class="feature-card p-4">
+                        <h3 class="text-orange-500 font-medium mb-2">Hardware-backed Security</h3>
+                        <p class="text-gray-300 text-sm">
+                            Private keys never leave the HSM, providing protection against memory scraping attacks.
+                        </p>
+                    </div>
+
+                    <div class="feature-card p-4">
+                        <h3 class="text-orange-500 font-medium mb-2">Adaptive Authentication</h3>
+                        <p class="text-gray-300 text-sm">
+                            Risk-based authentication that adjusts security requirements based on context.
+                        </p>
+                    </div>
+
+                    <div class="feature-card p-4">
+                        <h3 class="text-orange-500 font-medium mb-2">Passwordless Auth</h3>
+                        <p class="text-gray-300 text-sm">
+                            Support for FIDO2 WebAuthn standards eliminates the need for passwords.
+                        </p>
+                    </div>
+
+                    <div class="feature-card p-4">
+                        <h3 class="text-orange-500 font-medium mb-2">Audit Logging</h3>
+                        <p class="text-gray-300 text-sm">
+                            Comprehensive logging of all authentication events with cryptographic proof.
+                        </p>
+                    </div>
+
+                    <div class="feature-card p-4">
+                        <h3 class="text-orange-500 font-medium mb-2">High Availability</h3>
+                        <p class="text-gray-300 text-sm">
+                            Distributed architecture ensures continuous operation even during outages.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Example -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="terminal max-w-4xl mx-auto">
+                <div class="terminal-header">
+                    <div class="terminal-dot red"></div>
+                    <div class="terminal-dot yellow"></div>
+                    <div class="terminal-dot green"></div>
+                </div>
+                <div class="terminal-content">
+                    <span>$ cat secureauth_config.toml</span><br><br>
+                    <span>[server]</span><br>
+                    <span>port = 8080</span><br>
+                    <span>workers = 4</span><br><br>
+                    <span>[authentication]</span><br>
+                    <span>primary_factor = "webauthn"</span><br>
+                    <span>secondary_factor = "totp"</span><br>
+                    <span>risk_threshold = 0.7</span><br><br>
+                    <span>[hsm]</span><br>
+                    <span>module_path = "/usr/lib/pkcs11/libsofthsm2.so"</span><br>
+                    <span>slot = 1</span><br>
+                    <span>pin = "*****"</span><br><br>
+                    <span>$ <span class="blink">_</span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-gray-400 text-sm">john_doe@security:~$</p>
+                </div>
+                <div>
+                    <p class="text-gray-400 text-sm">© 2023 — No rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple terminal typing effect
+        document.addEventListener('DOMContentLoaded', function() {
+            const terminals = document.querySelectorAll('.terminal-content');
+
+            terminals.forEach(terminal => {
+                const commands = [
+                    "secureauth --start",
+                    "secureauth --add-user --name admin --roles superuser",
+                    "secureauth --enable-hsm --module /usr/lib/pkcs11/libsofthsm2.so",
+                    "secureauth --health-check",
+                    "secureauth --generate-report --format json"
+                ];
+
+                let currentCommand = 0;
+
+                function typeNextCommand() {
+                    if (currentCommand < commands.length) {
+                        const prompt = terminal.querySelector('span:last-child');
+                        if (prompt) {
+                            prompt.classList.remove('blink');
+
+                            const newLine = document.createElement('div');
+                            newLine.innerHTML = `$ ${commands[currentCommand]}<br><span>> Command executed successfully</span><br><br><span>$ <span class="blink">_</span></span>`;
+                            terminal.appendChild(newLine);
+
+                            currentCommand++;
+                            prompt.classList.add('blink');
+
+                            // Auto-scroll to bottom
+                            terminal.scrollTop = terminal.scrollHeight;
+
+                            // Schedule next command
+                            setTimeout(typeNextCommand, 3000);
+                        }
+                    }
+                }
+
+                // Start typing after initial delay
+                setTimeout(typeNextCommand, 5000);
+            });
+        });
+    </script>
+</body>
+</html>
