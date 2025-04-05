@@ -1,0 +1,11 @@
+doctype html
+html(lang="ru")
+    include head.pug
+    body
+      div.container
+        div.white.row.ctr
+          include header.pug
+          include mixins.pug
+          block content
+          div.footer
+            include footer.pug

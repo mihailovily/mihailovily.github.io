@@ -2,11 +2,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const terminal = document.querySelector('.terminal-content');
     const commands = [
-        "nmap -sV -T4 target.com",
-        "gobuster dir -u https://target.com -w wordlist.txt",
-        "sqlmap -u 'https://target.com/page?id=1' --dbs",
-        "hydra -l admin -P rockyou.txt target.com ssh",
-        "john --wordlist=rockyou.txt hashes.txt"
+        "nmap -sV -T4 target.com"
     ];
 
     let currentCommand = 0;
@@ -31,6 +27,5 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Start typing after initial delay
     setTimeout(typeNextCommand, 5000);
 });

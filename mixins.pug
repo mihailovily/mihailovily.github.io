@@ -29,3 +29,13 @@ mixin clients(name, pica, picb, picc, descr, visit, linkk)
       div.col-md-6
           a(href="#")
               img(src=picc width="100%")
+
+
+mixin project(subject, description, link, tag_1, tag_2)
+  a(href=link)
+    .card.p-4
+        h3.text-lg.font-medium.mb-2= subject
+        p.text-gray-400.text-sm.mb-3= description
+        .flex.flex-wrap.gap-1
+        span.project-tag= tag_1
+        span.project-tag= tag_2
