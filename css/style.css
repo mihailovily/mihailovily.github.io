@@ -6,10 +6,25 @@
     --text-secondary: #a3a3a3;
 }
 
+@font-face {
+	font-family: Rocket;
+	src: url('../font/Rocket/rocket.ttf');
+}
+
+@font-face {
+	font-family: JB_mono;
+	src: url('../font/JetBrains/JetBrainsMono-Regular.ttf');
+}
+
+@font-face {
+	font-family: Apple;
+	src: url('../font/Apple/SF-Pro.ttf');
+}
+
 body {
     background-color: var(--bg-dark);
     color: var(--text-primary);
-    font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family:  Apple, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     min-height: 100vh;
 }
 
@@ -45,13 +60,21 @@ body {
 .terminal {
     background-color: var(--bg-darker);
     border-radius: 4px;
-    font-family: 'Courier New', monospace;
+    font-family: JB_mono, 'Courier New', monospace;
     padding: 1rem;
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .monofont {
-    font-family: 'Courier New', monospace;
+    font-family: JB_mono, 'Courier New', monospace;
+}
+
+.rocketfont {
+    font-family: Rocket;
+}
+
+.applefont {
+    font-family: Apple;
 }
 
 .terminal-header {

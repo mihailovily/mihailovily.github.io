@@ -1,36 +1,3 @@
-mixin card(hreff, titlee, pp, imagee, proj)
-  div.col-sm-6
-    div.card
-      div.card-body
-        h4.card-title
-          br
-          a(href=hreff)= titlee
-        p.card-text= pp
-        img.carta(src=imagee) 
-        br
-        br
-        div(type="button" class="btn btn-default")
-          a(href=proj class="un wh") узнать больше
-mixin clients(name, pica, picb, picc, descr, visit, linkk)
-  h1.my-4= name
-  div.row
-      div.col-md-8
-          img(src=pica width="100%")
-      div.col-md-4
-          h3.my-3 описание
-          p= descr
-          div.btn.btn-default(type="button")
-              a.un.wh(href=linkk)= visit
-  h3.my-4 дополнительные фото
-  div.row
-      div.col-md-6
-          a(href="#")
-              img(src=picb width="100%")
-      div.col-md-6
-          a(href="#")
-              img(src=picc width="100%")
-
-
 mixin project(subject, description, link, tag_1, tag_2)
   a(href=link)
     .card.p-4
